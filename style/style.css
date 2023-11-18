@@ -1,0 +1,145 @@
+.car {
+            width: 100px;
+            height: 60px;
+            background: url("../img/blue_car.png") no-repeat center;
+            background-size: cover;
+            position: absolute;
+            transform:rotate(180deg);
+            border: 0px solid blue;
+            z-index: -10;
+   
+}
+        .barrelClass{
+            width:60px;
+            height:60px;
+            background: url("../img/barrel.png") no-repeat center;
+            background-size: contain;
+            position: absolute;
+            border: 0px solid grey;
+            z-index: -10;
+        }
+        .screen{
+            width: 600px;
+            height: 400px;
+            border: 1px solid blue;
+            overflow:hidden;
+            
+            
+}
+        .armorClass{
+            width:15px;
+            height: 15px;
+            background-image: url(../img/dur-icon2.png);
+            background-size: contain;
+
+        }
+        .armorDivClass{
+            display: flex;
+            flex-direction: row;
+            background-color: lightgray;
+            width:33px;
+            border-radius: 3px;
+        }
+        .gameOverClass{
+            font-size: 30px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:150px;
+            width:200px;
+            height: 70px;
+            color:antiquewhite;
+            display: block;
+            text-align: center;
+            line-height: 65px;
+            opacity: 0;
+            z-index: 10;
+        }
+        .showOver{
+            opacity:1;
+        }
+        .road1{
+            position: absolute;
+            z-index: -20;
+            top:9px;
+            background-size: cover;
+            width:650px;
+            height: 400px;
+            background-image: url(../img/road.jpg);
+            background-size: contain;
+            background-repeat:no-repeat;
+            background-repeat: round;
+        }
+             .road2{
+            position: absolute;
+            z-index: -20;
+            background-size: cover;
+            width:650px;
+            height: 400px;
+            background-image: url(../img/road.jpg);
+            background-size: contain;
+            background-repeat:no-repeat;
+            background-repeat: round;
+        }
+        .invisiblediv{
+            position: absolute;
+            top:0px;
+            left:610px;
+            background-color: white;
+            width:700px;
+            height: 410px;
+            margin-left:0px;
+        }
+        .firstinvisiblediv{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width:8px;
+            height: 700px;
+            background-color: white;
+        }
+        .arrows{
+            display: flex;
+           position: absolute;
+            top:420px;
+            text-align: center;
+            padding: inherit;
+            vertical-align: 20px;
+     vertical-align: middle;
+          
+            
+        }
+        .arrow{
+            margin:10px;
+            width:70px;
+            height:70px;
+            background-color: aqua;
+            user-select: none;
+            border-radius: 50px;
+        }
+        #up{
+            position:relative;
+            top:0px;
+            left:70px;
+        }
+        #down{
+            position:relative;
+            top:110px;
+            left:-20px;
+        }
+        #right{
+            position:relative;
+            top:55px;
+            left:-140px;
+        }
+        #left{
+            position:relative;
+            top:55px;
+            left:-170px;
+        }
+        @media(min-width:960px){
+         .arrows{
+             display:none !important;
+            }
+        }
+    
